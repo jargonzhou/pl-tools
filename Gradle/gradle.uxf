@@ -1,0 +1,145 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>530</x><y>230</y><w>210</w><h>430</h></coordinates><panel_attributes>*Project*
+bg=#caeace
+--
+getGradle()
+buildscript(...)
+--
+getRepositories()
+dependencies(...)
+getDependencies()
+configurations(...)
+getConfigurations()
+--
+ant(...)
+getName()
+getDescription()
+getGroup()
+getPath()
+getVersion()
+getLogger()
+--
+file(...)
+files(...)
+fileTree(...)
+--
+task(...)
+--
+property(...)
+ext
+--
+project(...)
+allprojects(...)
+subprojects(...)
+evaluationDependsOnChildren()
+evaluationDependensOn(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>430</y><w>120</w><h>40</h></coordinates><panel_attributes>*ExtensionAware*
+--
+getExtensions</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>70</y><w>120</w><h>70</h></coordinates><panel_attributes>*PluginAware*
+--
+apply(...)
+getPluginManager()
+getPlugins()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>130</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;100;90;10;90;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>430</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>980</x><y>70</y><w>170</w><h>160</h></coordinates><panel_attributes>*Settings*
+bg=#caeace
+--
+buildCache(...)
+findProject(...)
+getBuildscript()
+getGradle()
+getPluginManagement()
+getRootDir()
+getRootProject()
+include(...)
+project(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>250</y><w>200</w><h>160</h></coordinates><panel_attributes>*Gradle*
+--
+getTaskGraph()
+getParent()
+getRootProject()
+--
+projectsEvaluated(...)
+projectsLoaded(...)
+--
+addBuildListener(...)
+addListener(...)
+addProjectEvaluationListener(...)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>130</y><w>180</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90;160;90;160;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1080</x><y>270</y><w>210</w><h>70</h></coordinates><panel_attributes>* TaskExecutionGraph*
+--
+whenReady(...)
+addTaskExecutionGraphListener(...)
+addTaskExecutionListener(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>250</y><w>230</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>270</y><w>200</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>180;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>530</y><w>130</w><h>210</h></coordinates><panel_attributes>* Task*
+bg=#caeace
+--
+dependsOn(...)
+--
+doFirst(...)
+doLast(...)
+getActions()
+--
+getInputs()
+getOutputs()
+--
+getAnt()
+getDescription()
+getEnabled()
+getGroup()
+--
+property(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>530</y><w>260</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>240;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>570</y><w>170</w><h>80</h></coordinates><panel_attributes>* ExtraPropertiesExtension*
+--
+get(...)
+set(...)
+getProperties()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>570</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>460</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>570</y><w>100</w><h>40</h></coordinates><panel_attributes>* Action*
+--
+execute(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>570</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>620</y><w>100</w><h>90</h></coordinates><panel_attributes>* TaskInputs*
+--
+dir(...)
+file(...)
+files(...)
+property(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>730</y><w>100</w><h>90</h></coordinates><panel_attributes>* TaskOutputs*
+--
+dir(...)
+dirs(...)
+file(...)
+files(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>640</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>140;100;120;100;120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>620</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>350</y><w>170</w><h>60</h></coordinates><panel_attributes>* ConfigurationContainer*
+--
+create(...)
+getByName(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>390</y><w>180</w><h>120</h></coordinates><panel_attributes>* Configuration*
+bg=#caeace
+--
+getDependencies()
+getDescription()
+getExtendsFrom()
+getName()
+getResolutionStrategy()
+isTransitive()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>350</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>10;10;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>390</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>10;10;70;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>200</y><w>170</w><h>120</h></coordinates><panel_attributes>* DependencyHandler*
+--
+add(...)
+create(...)
+gradleApi()
+localGroovy()
+module(...)
+project(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>200</y><w>100</w><h>150</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>10;10;40;10;40;130;80;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>220</y><w>170</w><h>120</h></coordinates><panel_attributes>* Dependency*
+bg=#caeace
+--
+contentEquals(...)
+copy()
+getGroup()
+getName()
+getVersion()
+getReason()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>220</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>40</y><w>170</w><h>150</h></coordinates><panel_attributes>* RepositoryHandler*
+--
+flatDir(...)
+google()
+gradlePluginPortial()
+ivy(...)
+jcenter(...)
+maven(...)
+mavenCentral(...)
+mavenLocal()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>40</y><w>100</w><h>280</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>10;10;50;10;50;260;80;260</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>70</y><w>210</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>140</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>10;110;10;10;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1320</x><y>210</y><w>120</w><h>120</h></coordinates><panel_attributes>* ProjectDescriptor*
+--
+getBuildFile()
+getBuildFileName()
+getChildren()
+getName()
+getParent()
+getProjectDir()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1050</x><y>210</y><w>290</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>270;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>300</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>120</y><w>100</w><h>40</h></coordinates><panel_attributes>*Plugin*
+bg=#caeace
+--
+apply(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>120</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;..o</panel_attributes><additional_attributes>10;10;70;10</additional_attributes></element></diagram>

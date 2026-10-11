@@ -1,0 +1,52 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLNote</id><coordinates><x>360</x><y>0</y><w>80</w><h>30</h></coordinates><panel_attributes>Legend
+bg=pink</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>60</y><w>80</w><h>30</h></coordinates><panel_attributes>/Interface/
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>110</y><w>80</w><h>30</h></coordinates><panel_attributes>AbstractClass
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>160</y><w>80</w><h>30</h></coordinates><panel_attributes>Constant
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>210</y><w>80</w><h>30</h></coordinates><panel_attributes>Class</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>990</x><y>270</y><w>120</w><h>80</h></coordinates><panel_attributes>file
+XMLCodec
+--
+decode(...)
+encode(...)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>40</x><y>300</y><w>140</w><h>190</h></coordinates><panel_attributes>packages
+bg=pink
+--
+automata
+--
+debug
+--
+file
+--
+grammar
+--
+gui
+--
+pumping
+--
+regular</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1160</x><y>270</y><w>120</w><h>80</h></coordinates><panel_attributes>file.xml
+/Transducer/
+bg=green
+--
+fromDOM(...)
+toDOM(...)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>280</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1200</x><y>400</y><w>180</w><h>30</h></coordinates><panel_attributes>AutomatonTransducer
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1410</x><y>510</y><w>200</w><h>30</h></coordinates><panel_attributes>CFPumpingLemmaTransducer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1220</x><y>550</y><w>180</w><h>30</h></coordinates><panel_attributes>GrammarTransducer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1010</x><y>440</y><w>180</w><h>30</h></coordinates><panel_attributes>AbstractTransducer
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>340</y><w>130</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>110;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>460</y><w>210</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1220</x><y>460</y><w>180</w><h>30</h></coordinates><panel_attributes>PumpingLemmaTransducer
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>460</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1320</x><y>480</y><w>110</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1220</x><y>610</y><w>180</w><h>30</h></coordinates><panel_attributes>LSystemTransducer</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>460</y><w>150</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1410</x><y>540</y><w>200</w><h>30</h></coordinates><panel_attributes>RegPumpingLemmaTransducer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1220</x><y>660</y><w>180</w><h>30</h></coordinates><panel_attributes>RETransducer</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1080</x><y>460</y><w>160</w><h>230</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;210</additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>340</y><w>80</w><h>40</h></coordinates><panel_attributes>automata
+Automaton</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>470</y><w>180</w><h>30</h></coordinates><panel_attributes>FiniteStateAutomaton</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>500</y><w>180</w><h>30</h></coordinates><panel_attributes>MealyMachine</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>530</y><w>180</w><h>30</h></coordinates><panel_attributes>MooreMachine</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>560</y><w>180</w><h>30</h></coordinates><panel_attributes>PushdownAutomaton</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>590</y><w>180</w><h>30</h></coordinates><panel_attributes>TuringMachine</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>620</y><w>180</w><h>30</h></coordinates><panel_attributes>TuringMachineBuildingBlocks</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>650</y><w>180</w><h>30</h></coordinates><panel_attributes>VariableDependencyGraph</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>370</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>260</y><w>230</w><h>140</h></coordinates><panel_attributes>automata
+AutomatonSimulator
+bg=blue
+--
+Automaton myAutomaton
+Set&lt;Configuration&gt; myConfigurations
+--
+getInitialConfigurations(String)
+stepConfiguration(Configuration)
+boolean isAccepted()
+boolean simulateInput(String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>460</y><w>260</w><h>30</h></coordinates><panel_attributes>FSAStepByStateSimulator</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>490</y><w>260</w><h>30</h></coordinates><panel_attributes>FSAStepWithClosureSimulator</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>520</y><w>260</w><h>30</h></coordinates><panel_attributes>MealyStepByStateSimulator</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>550</y><w>260</w><h>30</h></coordinates><panel_attributes>MooreStepByStateSimulator</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>580</y><w>260</w><h>30</h></coordinates><panel_attributes>PDAStepByStateSimulator</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>610</y><w>260</w><h>30</h></coordinates><panel_attributes>PDAStepWithClosureSimulator</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>640</y><w>260</w><h>30</h></coordinates><panel_attributes>NDTMSimulator</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>670</y><w>260</w><h>30</h></coordinates><panel_attributes>TMSimulator</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>390</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>140</y><w>180</w><h>120</h></coordinates><panel_attributes>automata
+Configuration
+bg=blue
+--
+Configuration parent
+boolean focused
+State myCurrentState
+--
+boolean isAccept()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>260</y><w>170</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;100</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>150</y><w>160</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;120;140;10</additional_attributes></element></diagram>
